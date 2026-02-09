@@ -124,3 +124,7 @@ MIT License – Free to use, modify, and distribute.
 🙌 Author
 Sayan Koley
 QA Automation | AI in Testing | Open Source
+
+<img width="948" height="660" alt="VectorDB" src="https://github.com/user-attachments/assets/3f8460ea-47e1-4027-9214-4fe401788fe3" />
+<img width="1200" height="662" alt="RAG" src="https://github.com/user-attachments/assets/3a591340-68aa-48a6-81be-3e89774811f6" />
+![Image](https://github.com/user-attachments/assets/d986045b-58c2-4428-a2bf-89b0a910af93)
