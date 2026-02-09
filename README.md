@@ -102,6 +102,14 @@ Why This Project Is Special =>
 | RAG          | ⚠️        | ✅            |
 | QA-Specific  | ❌        | ✅            |
 
+🧭 Roadmap
+📂 Upload Jira tickets / PRDs / logs (PDF, TXT)
+🌐 Web UI using FastAPI
+🧠 Auto-learning from test execution results
+📊 Confidence score per answer
+🧪 CI/CD pipeline integration
+🔄 Multi-project vector isolation
+
 🤝 Contributing
 Contributions are welcome!
 Feel free to:
