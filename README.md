@@ -6,6 +6,25 @@ An open-source, fully local QA AI Agent designed to assist QA Engineers and Test
 ✅ Runs fully offline
 ✅ Uses open-source LLMs
 
+End-to-End Flow (Text Diagram)
+
+User
+ ↓
+main.py (CLI)
+ ↓
+qa_agent.py
+ ↓
+ChromaDB (Semantic Search)
+ ↓
+Relevant QA Context
+ ↓
+RAG Prompt Injection
+ ↓
+Ollama (LLaMA3)
+ ↓
+Grounded QA Answer
+
+
 🚀 Key Features
 🤖 Local LLM via Ollama (LLaMA 3 / Mistral)
 🧠 RAG (Retrieval-Augmented Generation)
@@ -109,6 +128,7 @@ Why This Project Is Special =>
 📊 Confidence score per answer
 🧪 CI/CD pipeline integration
 🔄 Multi-project vector isolation
+
 
 🤝 Contributing
 Contributions are welcome!
