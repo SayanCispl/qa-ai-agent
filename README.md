@@ -127,6 +127,4 @@ QA Automation | AI in Testing | Open Source
 
 <img width="948" height="660" alt="VectorDB" src="https://github.com/user-attachments/assets/3f8460ea-47e1-4027-9214-4fe401788fe3" />
 <img width="1200" height="662" alt="RAG" src="https://github.com/user-attachments/assets/3a591340-68aa-48a6-81be-3e89774811f6" />
-![Project Architecture](https://github.com/user-attachments/assets/acd356c0-67fe-4dcc-b821-6a31f9fc04ba)
-
-
+<img width="1100" height="620" alt="Project Architecture" src="https://github.com/user-attachments/assets/69f8d6cd-d981-4c9f-a273-eb2765dd1968" />
