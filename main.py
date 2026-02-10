@@ -1,4 +1,4 @@
-from agent.qa_agent import QAAIAgent
+from src.qa_agent import QAAIAgent
 from rich import print
 
 agent = QAAIAgent()
