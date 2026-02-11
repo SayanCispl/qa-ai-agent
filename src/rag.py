@@ -1,8 +1,22 @@
+"""
+RAG Pipeline Module
+-------------------
+Responsible for:
+- Retrieving relevant QA knowledge
+- Injecting context into LLM prompt
+- Blocking hallucinations if no context found
+"""
+
+
 from src.prompts import RAG_PROMPT
 
 
 class RAGPipeline:
     def __init__(self, vector_store, llm):
+        """
+                :param vector_store: VectorStore instance
+                :param llm: OllamaClient instance
+                """
         self.vector_store = vector_store
         self.llm = llm
 
@@ -17,6 +31,7 @@ class RAGPipeline:
         context_docs = self.vector_store.search(question)
 
         # 🚨 Step 2: Hard guardrail
+        # If nothing relevant found, stop here
         if not context_docs or len(context_docs) == 0:
             return "❌ Not found in QA knowledge."
 
@@ -43,5 +58,6 @@ ANSWER:
 """
 
         # 🤖 Step 5: Generate grounded response
+        # Call LLM
         return self.llm.generate(prompt)
 
