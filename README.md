@@ -1,123 +1,144 @@
-<div align="center">
+# 🧠 QA AI Agent
 
-# 🧪 QA AI Agent
-
-### 🚀 Offline AI-Powered QA Assistant using RAG, Ollama & ChromaDB
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Ollama-Local%20LLM-black?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/RAG-ChromaDB-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/AI-QA%20Automation-red?style=for-the-badge" />
-</p>
+### 🚀 Offline AI-Powered QA Engineering Platform using RAG, Ollama, FastAPI & ChromaDB
 
 ---
 
-### 🔥 Fully Local • Private • Offline • Open Source
+## 🔥 AI-Powered QA Intelligence Platform
 
-An advanced AI-powered QA Assistant built specifically for QA Engineers and SDETs using **Retrieval-Augmented Generation (RAG)** architecture.
+### ⚡ Fully Offline • Private • Open Source • Enterprise Ready
 
-💯 No OpenAI API
-🔒 100% Offline
-🧠 Local LLMs via Ollama
+An advanced AI-driven QA Engineering platform built specifically for:
+
+✅ QA Engineers
+✅ SDETs
+✅ Automation Engineers
+✅ API Testers
+✅ Performance Testers
+✅ DevOps & Release Teams
+
+Powered by:
+
+🧠 Retrieval-Augmented Generation (RAG)
 📦 ChromaDB Vector Search
-📊 Confidence Score Enabled
-
-</div>
-
----
-
-# ✨ Key Features
-
-<table>
-<tr>
-<td width="50%">
-
----
-
-# 🏗️ System Architecture
-
-<div align="center">
-
-```text
-                  ┌──────────────────────┐
-                  │      User Query      │
-                  └──────────┬───────────┘
-                             ↓
-                  ┌──────────────────────┐
-                  │      main.py CLI     │
-                  └──────────┬───────────┘
-                             ↓
-                  ┌──────────────────────┐
-                  │      qa_agent.py     │
-                  └──────────┬───────────┘
-                             ↓
-                  ┌──────────────────────┐
-                  │ ChromaDB Vector Store│
-                  └──────────┬───────────┘
-                             ↓
-                  ┌──────────────────────┐
-                  │ Semantic QA Retrieval│
-                  └──────────┬───────────┘
-                             ↓
-                  ┌──────────────────────┐
-                  │   RAG Prompt Builder │
-                  └──────────┬───────────┘
-                             ↓
-                  ┌──────────────────────┐
-                  │ Ollama (LLaMA3 LLM) │
-                  └──────────┬───────────┘
-                             ↓
-                  ┌──────────────────────┐
-                  │ Grounded QA Response │
-                  │ + Confidence Score   │
-                  └──────────────────────┘
-```
-
-</div>
+🤖 Ollama Local LLMs
+📊 Confidence Score Engine
+🌐 FastAPI APIs
+📘 Swagger Documentation
+📈 Streamlit Dashboard
+🧪 AI Flaky Test RCA
 
 ---
 
 # 📸 Project Preview
 
-## 🧠 RAG Workflow
+---
 
-<p align="center">
-  <img width="1200" alt="RAG" src="https://github.com/user-attachments/assets/3a591340-68aa-48a6-81be-3e89774811f6" />
-</p>
+## 🧠 RAG Architecture Workflow
 
 ---
 
 ## 📦 Vector Database Architecture
 
-<p align="center">
-  <img width="948" alt="VectorDB" src="https://github.com/user-attachments/assets/3f8460ea-47e1-4027-9214-4fe401788fe3" />
-</p>
+---
+
+## ⚙️ Complete System Design
 
 ---
 
-## ⚙️ Project Architecture
+# ✨ Core Features
 
-<p align="center">
-  <img width="1100" alt="Project Architecture" src="https://github.com/user-attachments/assets/69f8d6cd-d981-4c9f-a273-eb2765dd1968" />
-</p>
+## 🤖 AI-Powered QA Assistant
+
+* AI Test Case Generation
+* AI Bug Analysis
+* AI Log Analysis
+* AI QA Checklist Creation
+* AI Root Cause Analysis
+* AI Automation Failure Detection
+
+## 🧠 RAG + Semantic Search
+
+* ChromaDB Vector Search
+* Sentence Transformer Embeddings
+* Semantic Similarity Retrieval
+* Context-Aware QA Answers
+* Hallucination Prevention
+* Confidence Score Engine
+
+## 🌐 Modern Backend Stack
+
+* FastAPI REST APIs
+* Swagger/OpenAPI Docs
+* Streamlit Dashboard
+* Rich CLI UI
+* JSON Structured Logging
+* Modular Architecture
+
+## 🧪 QA Engineering Focus
+
+* Selenium Failure RCA
+* Playwright RCA
+* API Failure Analysis
+* Payment Failure Scenarios
+* Flaky Automation Detection
+* Retry Mechanism Validation
+
+---
+
+# 🏗️ Enterprise System Architecture
+
+```text
+                    ┌──────────────────────┐
+                    │     Streamlit UI     │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      FastAPI API     │
+                    └──────────┬───────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                ▼                             ▼
+      ┌─────────────────┐         ┌─────────────────┐
+      │   QA AI Agent   │         │  Swagger Docs   │
+      └────────┬────────┘         └─────────────────┘
+               │
+     ┌─────────┼─────────┐
+     ▼                   ▼
+┌──────────────┐   ┌──────────────┐
+│  RAG Engine  │   │ Ollama LLM  │
+└──────┬───────┘   └──────────────┘
+       │
+       ▼
+┌──────────────────────────┐
+│     ChromaDB Vector DB   │
+└──────────┬───────────────┘
+           ▼
+┌──────────────────────────┐
+│ SentenceTransformer Emb. │
+└──────────────────────────┘
+```
 
 ---
 
 # 🚀 Tech Stack
 
 
-| Layer           | Technology                |
-| --------------- | ------------------------- |
-| LLM Engine      | Ollama                    |
-| Models          | LLaMA3 / Mistral          |
-| Vector Database | ChromaDB                  |
-| Embeddings      | Sentence Transformers     |
-| Backend         | Python                    |
-| Architecture    | RAG                       |
-| Search          | Semantic Similarity       |
-| Memory          | Persistent Vector Storage |
+| Layer                | Technology            |
+| -------------------- | --------------------- |
+| Programming Language | Python                |
+| Local LLM Engine     | Ollama                |
+| Supported Models     | LLaMA3 / Mistral      |
+| Vector Database      | ChromaDB              |
+| Embeddings           | SentenceTransformers  |
+| Backend APIs         | FastAPI               |
+| API Documentation    | Swagger/OpenAPI       |
+| Frontend Dashboard   | Streamlit             |
+| UI Framework         | Rich                  |
+| AI Architecture      | RAG                   |
+| Logging              | Python Logging + JSON |
+| Metadata             | YAML                  |
 
 ---
 
@@ -126,140 +147,187 @@ An advanced AI-powered QA Assistant built specifically for QA Engineers and SDET
 ```bash
 qa-ai-agent/
 │
-├── agent/
-│   ├── qa_agent.py
-│   ├── ollama_client.py
-│   ├── vector_store.py
-│   ├── prompts.py
+├── api.py
+├── run.py
+├── streamlit_app.py
 │
 ├── chroma_db/
-├── .env
-├── main.py
+│
+├── logs/
+│
+├── data/
+│   └── qa_data/
+│
+├── src/
+│   ├── main.py
+│   ├── qa_agent.py
+│   ├── rag.py
+│   ├── vector_store.py
+│   ├── ollama_client.py
+│   ├── prompts.py
+│   └── flaky_analyzer.py
+│
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-# 🧠 Core Components
+# 🧠 Core Components Explained
 
-# 1️⃣ Ollama (Local LLM Engine)
+## 1️⃣ Ollama (Local LLM Engine)
 
-Runs open-source Large Language Models completely offline.
+Runs open-source LLMs completely offline.
 
 ### Supported Models
 
-- llama3
-- mistral
+* llama3
+* mistral
 
 ### Benefits
 
 ✅ No API Keys
 ✅ Fully Offline
 ✅ Faster Local Inference
-✅ Privacy Friendly
+✅ Secure & Private
+✅ Enterprise Friendly
 
 ---
 
-# 2️⃣ ChromaDB (Vector Database)
+## 2️⃣ ChromaDB (Vector Database)
 
 Stores QA knowledge as vector embeddings.
 
 ### Responsibilities
 
-- Semantic Search
-- QA Context Retrieval
-- Persistent Memory
-- Similarity Matching
+* Semantic Search
+* Similarity Matching
+* Persistent QA Memory
+* Context Retrieval
+* RAG Support
 
 ---
 
-# 3️⃣ RAG Layer
+## 3️⃣ RAG (Retrieval-Augmented Generation)
 
-Retrieves relevant QA context and injects it into prompts.
+Retrieves relevant QA knowledge before generating answers.
 
 ### Advantages
 
-- Prevents Hallucinations
-- Produces Grounded Answers
-- Improves Accuracy
-- Context-Aware Responses
+✅ Hallucination Reduction
+✅ Context-Aware Responses
+✅ Higher Accuracy
+✅ Grounded AI Answers
 
 ---
 
-# 4️⃣ Confidence Score Engine 📊
+## 4️⃣ Confidence Score Engine 📊
 
-The system now includes a **Confidence Score Mechanism** to evaluate response reliability based on semantic similarity retrieval.
+Every AI response includes a semantic confidence score.
 
-### Example
+### Formula
 
-```text
-Answer Confidence: 92%
+```python
+confidence = (1 - distance) * 100
 ```
 
 ### Benefits
 
-- Helps validate AI responses
-- Indicates retrieval relevance
-- Improves trustworthiness
-- Useful for enterprise QA workflows
+✅ Measures Retrieval Accuracy
+✅ Improves AI Trustworthiness
+✅ Useful for Enterprise QA
+✅ Helps Validate Responses
 
 ---
 
-# 🔐 Hallucination Safety
+## 5️⃣ AI Flaky Test RCA 🧪
 
-The assistant only answers using retrieved QA context.
+Intelligent flaky automation analysis engine.
 
-If no relevant context is found:
+### Detects Issues Like
+
+* TimeoutException
+* ElementClickInterceptedException
+* StaleElementReferenceException
+* Synchronization Failures
+* DOM Rendering Delays
+* Spinner Overlay Issues
+* Hardcoded Sleep Problems
+
+---
+
+# 🌐 FastAPI + Swagger Integration
+
+Production-ready backend APIs.
+
+### Features
+
+✅ REST APIs
+✅ JSON Responses
+✅ Swagger Documentation
+✅ OpenAPI Support
+✅ Frontend Integration Ready
+
+### Swagger Docs
 
 ```text
-"Not found in knowledge base"
+http://127.0.0.1:8000/docs
 ```
 
-This ensures:
+---
 
-- Reliable Answers
-- Reduced Hallucinations
-- Enterprise Safety
-- QA Accuracy
+# 📊 Streamlit Dashboard
+
+Interactive AI dashboard for QA Engineers.
+
+### Dashboard Features
+
+* RAG QA Search
+* Test Case Generation
+* AI Bug Analysis
+* AI Log Analysis
+* Confidence Visualization
+* Flaky Test RCA
 
 ---
 
 # 🛠️ Installation
 
-# 1️⃣ Install Ollama
-
-## macOS
+## 1️⃣ Clone Repository
 
 ```bash
-brew install ollama
-brew services start ollama
-```
+git clone https://github.com/your-username/qa-ai-agent.git
 
-## Verify
-
-```bash
-ollama --version
-```
-
-## Pull Model
-
-```bash
-ollama pull llama3
+cd qa-ai-agent
 ```
 
 ---
 
-# 2️⃣ Setup Python Environment
+## 2️⃣ Create Virtual Environment
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
+```
+
+---
+
+## 3️⃣ Activate Environment
+
+### macOS/Linux
+
+```bash
 source .venv/bin/activate
 ```
 
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
 ---
 
-# 3️⃣ Install Dependencies
+## 4️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -267,10 +335,58 @@ pip install -r requirements.txt
 
 ---
 
-# 4️⃣ Run the Agent
+## 5️⃣ Install Ollama
 
 ```bash
-python main.py
+brew install ollama
+```
+
+---
+
+## 6️⃣ Start Ollama
+
+```bash
+ollama serve
+```
+
+---
+
+## 7️⃣ Pull LLM Model
+
+```bash
+ollama pull mistral
+```
+
+---
+
+## 8️⃣ Load QA Embeddings
+
+```bash
+python data/load_qa_data.py
+```
+
+---
+
+## ▶️ Run CLI Application
+
+```bash
+python run.py
+```
+
+---
+
+## 🌐 Run FastAPI Backend
+
+```bash
+uvicorn api:app --reload
+```
+
+---
+
+## 📊 Run Streamlit Dashboard
+
+```bash
+streamlit run streamlit_app.py
 ```
 
 ---
@@ -278,16 +394,31 @@ python main.py
 # 🧪 Example QA Queries
 
 ```text
-What login-related bugs were reported earlier?
+Explain the payment gateway timeout production incident.
 
-Generate negative test cases for payment module.
+Generate negative test cases for checkout flow.
 
-Analyze this automation failure log.
+Analyze this Selenium flaky automation failure.
 
-Create a regression checklist for authentication.
+Why did duplicate payment happen during retry?
 
-Why did the checkout test fail yesterday?
+Create regression checklist for authentication module.
 ```
+
+---
+
+# 🎯 Real-World QA Use Cases
+
+
+| Domain      | Use Case                       |
+| ----------- | ------------------------------ |
+| Banking     | Payment Failure RCA            |
+| FinTech     | Duplicate Transaction Analysis |
+| E-Commerce  | Checkout Failure Debugging     |
+| Automation  | Flaky Selenium RCA             |
+| API Testing | Webhook Failure Analysis       |
+| Performance | Timeout Root Cause Analysis    |
+| DevOps      | Log Failure Investigation      |
 
 ---
 
@@ -298,37 +429,38 @@ Why did the checkout test fail yesterday?
 | ---------------- | -------- | ----------- |
 | Offline Support  | ❌       | ✅          |
 | Free to Use      | ❌       | ✅          |
+| Local LLM        | ❌       | ✅          |
 | Private Data     | ❌       | ✅          |
 | RAG Architecture | ⚠️     | ✅          |
-| QA-Specific      | ❌       | ✅          |
 | Confidence Score | ❌       | ✅          |
-| Local LLM        | ❌       | ✅          |
+| QA-Specific AI   | ❌       | ✅          |
+| Flaky Test RCA   | ❌       | ✅          |
 
 ---
 
 # 🌟 Enterprise Vision
 
-- Multi-Agent QA Reasoning
-- AI Failure Triage
-- Selenium Integration
-- Playwright Integration
-- Jira Integration
-- Autonomous Bug Clustering
-- QA Analytics Dashboard
-- AI Test Review Board
+* AI Failure Triage
+* Multi-Agent QA Systems
+* Autonomous Bug Clustering
+* Selenium Integration
+* Playwright Integration
+* Allure Report Analysis
+* AI QA Analytics Platform
+* CI/CD Failure Intelligence
 
 ---
 
 # 🧭 Future Roadmap
 
-- 📂 PDF / Jira / Log Upload Support
-- 🌐 FastAPI Web Dashboard
-- 🧠 Auto-Learning from Test Results
-- 📊 Advanced Confidence Metrics
-- 🔄 Multi-Project Isolation
-- 🧪 CI/CD Integration
-- 🐳 Docker Deployment
-- 📈 AI Observability
+* 📂 PDF/Jira Upload Support
+* 🧠 Self-Learning QA Engine
+* 🧪 AI Test Script Generation
+* 🐳 Docker Deployment
+* 📊 Advanced Observability
+* 🔄 Multi-Project Isolation
+* 📈 Historical RCA Tracking
+* ☁️ Kubernetes Deployment
 
 ---
 
@@ -336,13 +468,14 @@ Why did the checkout test fail yesterday?
 
 Contributions are welcome!
 
-You can help by:
+### You can contribute by:
 
-- Improving Retrieval Logic
-- Enhancing Prompt Engineering
-- Optimizing Semantic Search
-- Building UI Components
-- Adding QA Utilities
+* Improving RAG Retrieval
+* Enhancing Prompt Engineering
+* Optimizing Embeddings
+* Building UI Features
+* Adding QA Utilities
+* Improving AI RCA Logic
 
 ---
 
@@ -356,17 +489,13 @@ Free to use, modify, and distribute.
 
 # 👨‍💻 Author
 
-<div align="center">
-
-## Sayan Koley
+# Sayan Koley
 
 ### QA Automation Engineer • AI in Testing • Open Source Enthusiast
 
-</div>
-
 ---
 
-# ⭐ Support
+# ⭐ Support the Project
 
 If you found this project useful:
 
@@ -377,10 +506,11 @@ If you found this project useful:
 
 ---
 
-<div align="center">
+# 🚀 Vision
 
-# 🔥 Vision
+### Building the Future of AI-Powered QA Engineering
 
-### Building the Future of Offline AI for QA Engineering
-
-</div>
+🔥 Offline AI
+🔥 Local LLMs
+🔥 Intelligent Testing
+🔥 Enterprise QA Automation

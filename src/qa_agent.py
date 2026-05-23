@@ -13,6 +13,7 @@ Central orchestration layer for:
 from src.vector_store import VectorStore
 from src.ollama_client import OllamaClient
 from src.rag import RAGPipeline
+from src.flaky_analyzer import FlakyTestAnalyzer
 
 from src.prompts import (
     TEST_CASE_PROMPT,
@@ -44,6 +45,11 @@ class QAAIAgent:
         # =========================================
         self.rag = RAGPipeline(
             self.vector_store,
+            self.llm
+        )
+
+        # AI Flaky Test RCA
+        self.flaky_analyzer = FlakyTestAnalyzer(
             self.llm
         )
 
